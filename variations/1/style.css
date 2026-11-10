@@ -1,0 +1,549 @@
+.ACC_Nutre_Meals_21_grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 16px !important;
+    align-items: stretch !important;
+    padding-bottom: 48px !important;
+}
+
+.ACC_Nutre_Meals_21_grid>* {
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    flex: none !important;
+}
+
+.ACC_Nutre_Meals_21_progress .ACC_Nutre_Cartdrawer_24_v1 {
+    display: none !important;
+}
+
+.ACC_Nutre_Meals_21_native {
+    height: 100% !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: none !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+}
+
+.ACC_Nutre_Meals_21_native> :not(.ACC_Nutre_Meals_21_card) {
+    display: none !important;
+}
+
+.ACC_Nutre_Meals_21_card,
+.ACC_Nutre_Meals_21_card * {
+    box-sizing: border-box;
+}
+
+.ACC_Nutre_Meals_21_card {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    height: 100%;
+    padding: 12px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .06);
+    color: #3d433b;
+    font-family: inherit;
+    text-align: left;
+}
+
+.ACC_Nutre_Meals_21_card--selected {
+    border-color: #e03f00;
+}
+
+:where(.ACC_Nutre_Meals_21_card) button {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.ACC_Nutre_Meals_21_media {
+    flex: none;
+    width: 112px;
+    height: 112px;
+    padding: 0;
+    border: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #e6e2d8;
+}
+
+.ACC_Nutre_Meals_21_media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ACC_Nutre_Meals_21_body {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    min-width: 0;
+}
+
+.ACC_Nutre_Meals_21_tags {
+    display: flex;
+    gap: 4px;
+    width: 100%;
+    margin: 0;
+    padding: 0 16px 0 0;
+    list-style: none;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 32px), transparent);
+    mask-image: linear-gradient(90deg, #000 calc(100% - 32px), transparent);
+}
+
+.ACC_Nutre_Meals_21_tags::-webkit-scrollbar {
+    display: none;
+}
+
+.ACC_Nutre_Meals_21_tag {
+    flex: none;
+    margin: 0;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: #f4f4f4;
+    color: rgba(0, 0, 0, .6);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.ACC_Nutre_Meals_21_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    width: 100%;
+}
+
+.ACC_Nutre_Meals_21_name {
+    margin: 0;
+    padding: 0;
+    color: #3d433b;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.5px;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.ACC_Nutre_Meals_21_badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.ACC_Nutre_Meals_21_badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 7px;
+    border-radius: 4px;
+    background: #2d382b;
+    color: #daff54;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: .2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.ACC_Nutre_Meals_21_badge--favorite {
+    padding: 3px 6px;
+    border: 1px solid #2d382b;
+    background: transparent;
+    color: #2d382b;
+}
+
+.ACC_Nutre_Meals_21_nutri {
+    margin: 0;
+    color: #3d433b;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.1px;
+}
+
+.ACC_Nutre_Meals_21_actions {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.ACC_Nutre_Meals_21_actions:empty {
+    display: none;
+}
+
+.ACC_Nutre_Meals_21_portion {
+    display: flex;
+    flex: 1 1 0;
+    min-width: 0;
+    height: 34px;
+    border: 1px solid #e03f00;
+    border-radius: 999px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.ACC_Nutre_Meals_21_portion button {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 0 10px;
+    border: 0;
+    background: #fff;
+    color: #4a4843;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.ACC_Nutre_Meals_21_portion button+button {
+    border-left: 1px solid #e03f00;
+}
+
+.ACC_Nutre_Meals_21_portion button[aria-pressed="true"] {
+    background: #fce7dc;
+    color: #b5350a;
+}
+
+.ACC_Nutre_Meals_21_round {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 0;
+    border-radius: 999px;
+    background: #e03f00;
+    color: #fff;
+}
+
+:where(.ACC_Nutre_Meals_21_card) .ACC_Nutre_Meals_21_round {
+    color: #fff;
+}
+
+.ACC_Nutre_Meals_21_round--dark {
+    background: #3d433b;
+}
+
+.ACC_Nutre_Meals_21_round svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.ACC_Nutre_Meals_21_round:hover {
+    filter: brightness(.92);
+}
+
+.ACC_Nutre_Meals_21_side {
+    display: flex;
+    flex: none;
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.ACC_Nutre_Meals_21_vstep {
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 999px;
+    background: #f6f3ea;
+}
+
+.ACC_Nutre_Meals_21_vstep .ACC_Nutre_Meals_21_round {
+    width: 24px;
+    height: 24px;
+}
+
+.ACC_Nutre_Meals_21_vstep .ACC_Nutre_Meals_21_round svg {
+    width: 14px;
+    height: 14px;
+}
+
+.ACC_Nutre_Meals_21_vstep .ACC_Nutre_Meals_21_round--dark {
+    background: transparent;
+    color: #2d382b;
+}
+
+.ACC_Nutre_Meals_21_qty {
+    color: #2d382b;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 20px;
+    text-align: center;
+}
+
+.ACC_Nutre_Meals_21_hstep {
+    display: none;
+    flex: 1 1 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 3px 4px;
+    border-radius: 999px;
+    background: #f6f3ea;
+}
+
+.ACC_Nutre_Meals_21_hstep .ACC_Nutre_Meals_21_qty {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.ACC_Nutre_Meals_21_actions>.ACC_Nutre_Meals_21_round {
+    display: none;
+}
+
+.ACC_Nutre_Meals_21_card button:focus-visible {
+    outline: 2px solid #e03f00;
+    outline-offset: 2px;
+}
+
+@media (min-width: 1024px) {
+    .ACC_Nutre_Meals_21_grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 8px !important;
+        padding-bottom: 0 !important;
+    }
+    .ACC_Nutre_Meals_21_card {
+        gap: 20px;
+        padding: 22px;
+    }
+    .ACC_Nutre_Meals_21_media {
+        width: 140px;
+        height: 140px;
+    }
+    .ACC_Nutre_Meals_21_body {
+        align-self: stretch;
+        gap: 8px;
+    }
+    .ACC_Nutre_Meals_21_info {
+        gap: 10px;
+    }
+    .ACC_Nutre_Meals_21_tag {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    .ACC_Nutre_Meals_21_name {
+        font-size: 22px;
+    }
+    .ACC_Nutre_Meals_21_nutri {
+        font-size: 14px;
+    }
+    .ACC_Nutre_Meals_21_side {
+        display: none;
+    }
+    .ACC_Nutre_Meals_21_actions {
+        height: 40px;
+    }
+    .ACC_Nutre_Meals_21_portion {
+        height: 40px;
+    }
+    .ACC_Nutre_Meals_21_actions>.ACC_Nutre_Meals_21_round {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+    }
+    .ACC_Nutre_Meals_21_card--selected .ACC_Nutre_Meals_21_actions>.ACC_Nutre_Meals_21_round {
+        display: none;
+    }
+    .ACC_Nutre_Meals_21_card--selected .ACC_Nutre_Meals_21_hstep {
+        display: flex;
+    }
+    .ACC_Nutre_Meals_21_card--selected .ACC_Nutre_Meals_21_actions {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .ACC_Nutre_Meals_21_card--selected .ACC_Nutre_Meals_21_portion {
+        flex-basis: 100%;
+    }
+}
+
+.ACC_Nutre_Meals_21_headbg {
+    background: #2d382b !important;
+}
+
+.ACC_Nutre_Meals_21_headwrap {
+    flex-wrap: wrap !important;
+}
+
+.ACC_Nutre_Meals_21_count {
+    color: #feffed !important;
+}
+
+.ACC_Nutre_Meals_21_total {
+    color: #daff54 !important;
+}
+
+.ACC_Nutre_Meals_21_progress {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 6px 0 0;
+    font-family: inherit;
+    text-align: left;
+}
+
+.ACC_Nutre_Meals_21_bar {
+    position: relative;
+    height: 6px;
+    border-radius: 999px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .18);
+}
+
+.ACC_Nutre_Meals_21_bar span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: var(--p, 0%);
+    border-radius: 999px;
+    background: #daff54;
+    transition: width .35s ease;
+}
+
+.ACC_Nutre_Meals_21_copy {
+    margin: 8px 0 0;
+    color: #e4e8df;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.ACC_Nutre_Meals_21_copy+.ACC_Nutre_Meals_21_copy {
+    margin-top: 4px;
+}
+
+.ACC_Nutre_Meals_21_copy strong {
+    font-weight: 700;
+}
+
+.ACC_Nutre_Meals_21_hl,
+.ACC_Nutre_Meals_21_ok {
+    color: #daff54;
+}
+
+.ACC_Nutre_Meals_21_ok {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.ACC_Nutre_Meals_21_ok svg {
+    flex: none;
+    width: 13px;
+    height: 13px;
+}
+
+.ACC_Nutre_Meals_21_copy--warning {
+    color: #ff9b6a;
+    font-weight: 700;
+}
+
+.ACC_Nutre_Meals_21_bar--warning span {
+    background: #ff9b6a;
+}
+
+.ACC_Nutre_Meals_21_was {
+    margin-right: 8px;
+    color: rgba(254, 255, 237, .55);
+    font-size: .72em;
+    font-weight: 500;
+    text-decoration: line-through;
+    white-space: nowrap;
+}
+
+.ACC_Nutre_Meals_21 .sectionWrapper.mealSelectionWrapper .sectionWrapper>p.MuiTypography-root.MuiTypography-body1 {
+    margin-bottom: 16px;
+}
+
+.ACC_Nutre_Meals_21_was {
+    display: none !important;
+}
+
+.lineThrough.ACC_Nutre_Meals_21_total {
+    color: rgba(254, 255, 237, 0.55) !important;
+    font-size: 0.72em;
+    font-weight: 500;
+    text-decoration: line-through;
+    white-space: nowrap;
+}
+
+.ACC_Nutre_Meals_21_price {
+    margin: 0;
+    color: #3d433b;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22.5px;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.ACC_Nutre_Meals_21 .header.ACC_Nutre_Meals_21_headbg .ACC_Nutre_Cartdrawer_24_v1 {
+    display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ACC_Nutre_Meals_21_bar span {
+        transition: none;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 900px) {
+    .ACC_Nutre_Meals_21_actions {
+        height: auto;
+    }
+    .ACC_Nutre_Meals_21_portion {
+        flex: none;
+    }
+    .ACC_Nutre_Meals_21_actions {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 899.99px) {
+    .ACC_Nutre_Meals_21 .main-wrapper.mealsPage .isMealsPage.cartWrapper,
+    .ACC_Nutre_Meals_21 .main-wrapper.mealsPage .isMealsPage.cartWrapper .ACC_Nutre_Meals_21_headbg {
+        border-radius: 0;
+    }
+    .ACC_Nutre_Meals_21 .main-wrapper.mealsPage .isMealsPage.cartWrapper .ACC_Nutre_Meals_21_headbg .ACC_Nutre_Meals_21_count:after {
+        content: ' in your box';
+    }
+    .ACC_Nutre_Meals_21 .main-wrapper.mealsPage .isMealsPage.cartWrapper:not(.openMobileCart) {
+        top: calc(var(--viewport-height, 100vh) - var(--ACC_Nutre_Meals_21-header-height));
+    }
+    .isMealsPage.cartWrapper .ACC_Nutre_Meals_21_headbg>.ACC_Nutre_Meals_21_count {
+        color: #FFF !important;
+        font-family: Archivo;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
